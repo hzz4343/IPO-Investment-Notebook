@@ -167,6 +167,21 @@
     fill: var(--gray-900);
   }
 
+  .markdown-editor-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  .markdown-editor-section h2 {
+    font-size: 2rem;
+    color: var(--gray-900);
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
   @media screen and (max-width: 650px) {
     .content {
       flex-direction: column;
@@ -329,6 +344,12 @@
     </div>
   </div>
 </main>
+
+<!-- Markdown Editor Section -->
+<section class="markdown-editor-section">
+  <h2>IPO Investment Notebook</h2>
+  <app-markdown-editor></app-markdown-editor>
+</section>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
