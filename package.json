@@ -32,7 +32,13 @@
     "@angular/router": "^20.3.0",
     "@angular/ssr": "^20.3.3",
     "@toast-ui/editor": "^3.2.2",
+    "ace-builds": "^1.43.3",
+    "bootstrap": "^5.3.8",
     "express": "^5.1.0",
+    "font-awesome": "^4.7.0",
+    "marked": "^16.3.0",
+    "ngx-markdown": "^20.1.0",
+    "ngx-markdown-editor": "^5.3.4",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"

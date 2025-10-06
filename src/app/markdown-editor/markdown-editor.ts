@@ -1,21 +1,37 @@
-import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
-// @ts-ignore
-import Editor from '@toast-ui/editor';
+import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { LMarkdownEditorModule } from 'ngx-markdown-editor';
 
 @Component({
   selector: 'app-markdown-editor',
   templateUrl: './markdown-editor.html',
-  styleUrls: ['./markdown-editor.css']
+  styleUrls: ['./markdown-editor.css'],
+  imports: [FormsModule, LMarkdownEditorModule],
+  standalone: true
 })
-export class MarkdownEditorComponent implements AfterViewInit {
-  @ViewChild('editor') editorRef!: ElementRef;
+export class MarkdownEditorComponent {
+  content = `# IPO Investment Notebook
 
-  ngAfterViewInit() {
-    new Editor({
-      el: this.editorRef.nativeElement,
-      height: '400px',
-      initialEditType: 'markdown',
-      previewStyle: 'vertical'
-    });
-  }
+## Company Analysis
+
+### Basic Information
+- **Company Name**: 
+- **Industry**: 
+- **IPO Date**: 
+
+### Financial Metrics
+- **Revenue**: 
+- **Growth Rate**: 
+- **Profit Margin**: 
+
+### Investment Thesis
+Write your investment reasoning here...
+
+### Risk Factors
+- Risk 1
+- Risk 2
+- Risk 3
+
+### Conclusion
+Your final assessment...`;
 }
